@@ -1,0 +1,259 @@
+/* Ekleme sayfası stilleri */
+* 
+body{
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .collapse{
+  margin-top: -30px;
+  margin-left: 840px;
+  }
+  header {
+    background-color: #f1f1f1;
+    
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f0f0f0;
+    box-shadow: 0px 2px 4px #ffffff1a;
+    background-color: #ffffff;
+    height: 100px;
+  
+   
+  
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+   
+   
+  }
+  .logo-text{
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    color: #333333;
+  }
+  .navbar-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #81B3D7;
+    color: #FFFFFF;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #81B3D7;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-item {
+    display: block;
+    color: #333333;
+    padding: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #6497BC;
+    color: #FFFFFF;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .logo-text span {
+    font-style: normal;
+    color:#77EBCA ;
+    font-weight: bold;
+  }
+  
+  
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.urun-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  position: relative;
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+
+
+.card-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #19be6f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #0f9446;
+}
+
+
+
+
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.heart-icon img {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 340px;
+  padding: 10px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+
+.product-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-price {
+  margin-top: 5px;
+}
+
+.rating {
+  margin-top: 10px;
+}
+
+.rating-stars {
+  display: inline-block;
+  color: gold;
+}
+
+.points {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #4DE5B9;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sepet{
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  background-color: #20e6ad;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4DE5B9;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.discount-text {
+  font-weight: bold;
+}
+
+
+.card-container {
+  justify-content: flex-start;
+}
+

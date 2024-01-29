@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500px Genişlikte Div</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .main-container {
+            width: 500px;
+            margin: auto;
+            border: 2px solid #81D9D8;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #ffffff;
+        }
+
+        .checkbox-container {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-container label {
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            background-color: #81D9D8;
+            margin-right: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .anket-container {
+            display: block;
+        }
+
+        .anket-container h3 {
+            margin-bottom: 10px;
+            color: #81D9D8;
+        }
+
+        .anket-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .anket-container select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 2px solid #81D9D8;
+            border-radius: 5px;
+        }
+        .anket-container input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 2px solid #81D9D8;
+            border-radius: 5px;
+        }
+
+        .anket-container p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+            justify-content: center;
+           
+        }.anket-button{
+            width: 250px;
+            height: 40px;
+            font-weight: 600;
+            font-size: large;
+            border-radius: 15px;
+            background-color: #81D9D8;
+            color: #ffffff;
+            border-color: #81D9D8;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="checkbox-container">
+            <input class="checbox1" type="checkbox" name="checkbox1" onclick="toggleAnket()">
+            <label for="checkbox1">HENÜZ DOĞUM YAPMADI</label>
+        </div>
+        <div class="checkbox-container">
+            <input class="checbox2" type="checkbox" name="checkbox2" onclick="toggleAnket()">
+            <label for="checkbox2">DOĞUM GERÇEKLEŞTİ</label>
+        </div>
+        <div class="anket-container" id="anket1Div">
+            <h3>HENÜZ DOĞUM GERÇEKLEŞMEDİ</h3>
+            <p>Lütfen bebeğiniz hakkında gereken bilgileri doldurunuz.</p>
+            <label for="soru1">Kaç haftalık hamile?</label>
+            <select id="soru1" name="soru1">
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <label for="soru2">Cinsiyeti nedir?</label>
+            <select id="soru2" name="soru2">
+                <option value="öğrenmedim">Öğrenmedim</option>
+                <option value="kız">Kız</option>
+                <option value="erkek">Erkek</option>
+            </select>
+            <div class="button-container">
+                <button class="anket-button" onclick="window.location.href='#'">Kaydolun</button>
+            </div>
+        </div>
+        <div class="anket-container" id="anket2Div">
+            <h3>DOĞUM GERÇEKLEŞTİ</h3>
+            <p>Lütfen bebeğiniz hakkında başka bilgileri doldurunuz.</p>
+            <label for="soru3">Bebeğinizin doğum günü:</label>
+            <input type="date" class="form-control" placeholder="gg/aa/yy "> 
+            <label for="soru4">Cinsiyeti Nedir:</label>
+            <select id="soru4" name="soru4">
+                <option value="cevap7">Erkek</option>
+                <option value="cevap8">Kız</option>
+            </select>
+            <label for="input3">Bebeğinizin boyunu giriniz</label>
+            <input type="text" class="form-control" placeholder="Boy">
+            <label for="input3">Bebeğinizin kilosunu giriniz</label>
+             <input type="text" class="form-control" placeholder="Kilo">
+             <label for="input3">Bebeğinizin kafa çevresini giriniz</label>
+             <input type="text" class="form-control" placeholder="Kafa çevresi">
+             <div class="button-container">
+                <button class="anket-button" onclick="window.location.href='#'">Kaydolun</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnket() {
+            var checkbox1 = document.querySelector('input[name="checkbox1"]');
+            var checkbox2 = document.querySelector('input[name="checkbox2"]');
+            var anket1Div = document.getElementById('anket1Div');
+            var anket2Div = document.getElementById('anket2Div');
+
+            if (checkbox1.checked) {
+                anket1Div.style.display = 'block';
+                anket2Div.style.display = 'none';
+            } else if (checkbox2.checked) {
+                anket1Div.style.display = 'none';
+                anket2Div.style.display = 'block';
+            } else {
+                anket1Div.style.display = 'none';
+                anket2Div.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

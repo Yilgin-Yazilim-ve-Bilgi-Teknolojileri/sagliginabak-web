@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günlük Plan </title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+      <style>
+        
+        body{
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .collapse{
+  margin-top: -30px;
+  margin-left: 840px;
+  }
+  header {
+    background-color: #f1f1f1;
+    
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f0f0f0;
+    box-shadow: 0px 2px 4px #ffffff1a;
+    background-color: #ffffff;
+    height: 100px;
+  
+   
+  
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+   
+   
+  }
+  .logo-text{
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    color: #333333;
+  }
+  .navbar-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #81B3D7;
+    color: #FFFFFF;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #81B3D7;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-item {
+    display: block;
+    color: #333333;
+    padding: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #6497BC;
+    color: #FFFFFF;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .logo-text span {
+    font-style: normal;
+    color:#77EBCA ;
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  .plan {
+    border-radius: 16px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    max-width: 500px;
+    display: flex;
+ 
+    justify-content: center;
+   
+   height: 800px;
+    margin: 50px auto;
+  }
+  
+  .plan strong {
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #81b3d70b;
+    border-radius: 22px;
+    position: relative;
+    width: 900px;
+   height: 800px;
+    
+  }
+  
+  .plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #81b3d76a;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+    
+  }
+  
+  .plan .pricing small {
+    color: #000000;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+  }
+  
+  .plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #425675;
+  }
+  
+  .plan .title + * {
+    margin-top: 0.75rem;
+  }
+  
+  .plan .info + * {
+    margin-top: 1rem;
+  }
+  
+ 
+  
+  .plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .plan .button {
+    background-color: #77EBCA;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+  }
+  
+  .plan .button:hover, .plan .button:focus {
+    background-color: #63c0a8;
+  }
+
+
+
+
+
+
+
+  /* Önceki CSS kodları buraya yapıştırın, daha sonra yeni stilleri ekleyin */
+
+.payment-form {
+    margin-top: 20px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.banka{
+  max-width: 500px;
+  height: 90px;
+  background-color: #cdcdcd84;
+  border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="resimler/img/Group 77.png" alt="">
+                    <a class="navbar-brand" href="anasayfa.html"><span class="logo-text">Sağlığına <span>Bak</span></span></a>
+                </div>
+                
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">İletişim</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHizmetlerimiz" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hizmetlerimiz
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownHizmetlerimiz">
+                                <a class="dropdown-item" href="#">Ürünler</a>
+                                <a class="dropdown-item" href="#">Tavsiyeler</a>
+                                <a class="dropdown-item" href="#">Randavu</a>
+                                <a class="dropdown-item" href="#">Reçete</a>
+                                <a class="dropdown-item" href="#">Evebeyin Kulübü</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfil" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Profil
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownProfil">
+                                <a class="dropdown-item" href="#">Profilim</a>
+                                <a class="dropdown-item" href="#">Sepetim</a>
+                                <a class="dropdown-item" href="#">Favorilerim</a>
+                                <a class="dropdown-item" href="#">Siparişlerim</a>
+                                <a class="dropdown-item" href="#">Randavularım</a>
+                                <a class="dropdown-item" href="#">Ayarlar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <h2 style="text-align: center; margin-top: 60px;">REÇETE</h2>
+    
+    <div class="plan">
+		<div class="inner">
+			<span class="pricing">
+				<span>
+					$49 <small>/ m</small>
+				</span>
+			</span>
+			<p class="title">Günlük Paket</p>
+			<p class="info">This plan is for those who have a team already and running a large business.</p>
+			<ul class="features">
+				
+					<li>
+           <p><b>Lorem ipsum dolor sit amet consectetur.</b></p>
+         </li>
+         <li>
+          <p><b>Lorem ipsum dolor sit amet consectetur.</b></p>
+        </li>
+        <li>
+          <p><b>Lorem ipsum dolor sit amet consectetur.</b></p>
+        </li>
+        <li>
+          <p><b>Lorem ipsum dolor sit amet consectetur.</b></p>
+        </li>
+			
+			</ul>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, deleniti inventore tempora earum nisi facere sed repellat asperiores ad. Assumenda magni quia ratione harum sapiente? Nesciunt illum nihil eligendi libero!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, deleniti inventore tempora earum nisi facere sed repellat asperiores ad. Assumenda magni deleniti inventore tempora earum nisi facere sed repellat asperiores ad. Assumenda magni quia ratione harum sapiente? Nesciunt illum nihil eligendi libero!</p>
+
+      <div class="banka">
+      <span class="isim" style=" position: absolute; margin-top: 10px;">FATMA KARA</span>
+      <span class="kart-no" style="position: absolute; margin-top: 40px;">1230 1234 1234 1334</span>
+      
+
+      <span class="mastercard" style="margin-left: 400px; margin-bottom: 20px;  margin-top: 40px;"><img src="resimler/Mastercard_2019_logo 1.png" width="40px"  alt=""></span>
+      <span class="tarih" style="margin-left: 400px; bottom: 0;">01/23</span>
+      
+      </div>
+      <a href="#" style="margin-left: 310px;"> Başka Kart İle Öde</a>
+
+     <p>
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+
+    <label for="privacy-policy"  ><b>Mesafeli Satış Sözleşmesini</b> ve <b>Kullanım Koşullarını</b>  onaylıyorum.</label>
+    <input style="margin-left: 330px; width: 20px; height: 20px;" type="checkbox" id="privacy-policy" name="privacy-policy" required>
+       
+
+    
+			<div class="action" style="margin-top: 40px;">
+			<a class="button" href="#"  type="submit">
+				Satın Al
+			</a>
+			</div>
+		</div>
+    </div>
+        

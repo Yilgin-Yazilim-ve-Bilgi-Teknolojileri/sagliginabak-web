@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu</title>
+    <!-- Eski stil bağlantıları -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="randavu.css">
+    <style>
+       
+
+     
+
+        .container {
+            margin-top: 20px;
+        }
+        .col-md-6 img {
+            width: 340px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+
+           
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Görselleri yatayda ortala */
+        }
+
+        .mt-4 {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar kodu ekleniyor -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="resimler/img/Group 77.png" alt="">
+                    <a class="navbar-brand" href="anasayfa.html"><span class="logo-text">Sağlığına <span>Bak</span></span></a>
+                </div>
+                
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">İletişim</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHizmetlerimiz" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hizmetlerimiz
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownHizmetlerimiz">
+                                <a class="dropdown-item" href="#">Ürünler</a>
+                                <a class="dropdown-item" href="#">Tavsiyeler</a>
+                                <a class="dropdown-item" href="#">Randavu</a>
+                                <a class="dropdown-item" href="#">Reçete</a>
+                                <a class="dropdown-item" href="#">Evebeyin Kulübü</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfil" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Profil
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownProfil">
+                                <a class="dropdown-item" href="#">Profilim</a>
+                                <a class="dropdown-item" href="#">Sepetim</a>
+                                <a class="dropdown-item" href="#">Favorilerim</a>
+                                <a class="dropdown-item" href="#">Siparişlerim</a>
+                                <a class="dropdown-item" href="#">Randavularım</a>
+                                <a class="dropdown-item" href="#">Ayarlar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Randevu sayfası içeriği -->
+    <h2 style="text-align: center; font-weight: bold; margin-top: 30px; margin-left: -70px;">Randavu</h2>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-3"> 
+                <a href="sayfa1.html">
+                <img src="resimler/Group 60.png" alt="Görsel 1" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="sayfa2.html">
+                <img src="resimler/Group 61.png" alt="Görsel 2" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3">
+              <a href="sayfa3.html"> 
+               <img src="resimler/Group 59.png" alt="Görsel 3" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-md-3">
+                <a href="sayfa4.html">
+                <img src="resimler/Group 58.png" alt="Görsel 4" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

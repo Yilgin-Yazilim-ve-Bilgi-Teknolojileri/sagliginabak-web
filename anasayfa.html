@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sağlığına Bak</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="anasayfa.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            padding-top: 40px;
+        }
+
+        .navbar {
+            margin-left: 0px;
+            margin-right: 0px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .navbar.fixed-top {
+            background-color: white !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $('.navbar').addClass('fixed-top');
+                } else {
+                    $('.navbar').removeClass('fixed-top');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-logo">
+                <img src="assets/images/logo.png" alt="Image 3" style="width: 30%; height: auto; margin-right: 15px;">
+                <a class="navbar-brand" href="#">Sağlığına Bak</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">İletişim</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHizmetlerimiz" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Hizmetlerimiz
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownHizmetlerimiz">
+                            <a class="dropdown-item" href="#">Ürünler</a>
+                            <a class="dropdown-item" href="#">Tavsiyeler</a>
+                            <a class="dropdown-item" href="#">Randavu</a>
+                            <a class="dropdown-item" href="#">Reçete</a>
+                            <a class="dropdown-item" href="#">Evebeyin Kulübü</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="randavu.html" id="navbarDropdownProfil" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Profil
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownProfil">
+                            <a class="dropdown-item" href="login.html">Profilim</a>
+                            <a class="dropdown-item" href="#">Sepetim</a>
+                            <a class="dropdown-item" href="#">Favorilerim</a>
+                            <a class="dropdown-item" href="#">Siparişlerim</a>
+                            <a class="dropdown-item" href="#">Randavularım</a>
+                            <a class="dropdown-item" href="#">Ayarlar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body-margin">
+        <div class="cards">
+            <div class="custom-card" id="cardimg1">
+                <a href="urunler.html" class="card-link">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="assets/images/urunler.png" alt="Image 3" style="width: 35%; height: auto;">
+
+                        </div>
+                        <div class="card-content">
+                            <h3>ÜRÜNLER</h3>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="custom-card" id="cardimg2">
+                <a href="tavsıyeler.html">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="assets/images/tavsiyeler.png" alt="Image 3" style="width: 35%; height: auto;">
+
+                        </div>
+                        <div class="card-content">
+                            <h3>TAVSİYELER</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="custom-card" id="cardimg3">
+                <a href="sayfa3.html">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="assets/images/recete.png" alt="Image 3" style="width: 35%; height: auto;">
+                        </div>
+                        <div class="card-content">
+                            <h3>REÇETE</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="custom-card" id="cardimg4">
+                <a href="sayfa4.html">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="assets/images/randevular.png" alt="Image 4" style="width: 35%; height: auto;">
+                        </div>
+                        <div class="card-content">
+                            <h3>RANDEVU</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="custom-card" id="cardimg5">
+                <a href="sayfa5.html">
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="assets/images/ebeveyn.png" alt="Image 4" style="width: 55%; height: auto;">
+                        </div>
+                        <div class="card-content">
+                            <h3>EBEVEYN KLÜBÜ</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="kutu">
+            <div class="coksatan">
+                <div class="container">
+                    <div class="section-title centered">
+                        <h3 class="title mb-0">Çok Satanlar </h3>
+                    </div>
+                    <div class="tab-content col-12" id="myTabContent">               
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="sigma_product style-8">
+
+                                    <div class="heart-right">
+                                        <Button id="btn1" class="btn" onclick="Toggle1(id)">
+                                            <i class="fa-brands fa-gratipay"></i>
+                                        </Button>
+                                    </div>
+
+                                    <div class="sigma_product-thumb"><a href="#"><img
+                                                src="resimler/img/tekerlekli-sandalye.png" alt=""></a></div>
+                                    <div class="sigma_product-body">
+                                        <h5 class="sigma_product-title">Tekerleli Sandalye</h5>
+                                        <div class="sigma_rating">
+
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="sigma_product-price"><span>$30,6</span><span>$34</span></div>
+                                        <button class="button-icon"><a href="#"> <i
+                                                    class="fa-solid fa-cart-arrow-down fa-lg" style="color: #fff;"
+                                                    id="icons"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="sigma_product style-8">
+
+                                    <div class="heart-right">
+                                        <Button id="btn2" class="btn" onclick="Toggle1(id)">
+                                            <i class="fa-brands fa-gratipay"></i>
+                                        </Button>
+                                    </div>
+
+                                    <div class="sigma_product-thumb"><a href="#"><img
+                                                src="resimler/img/tekerlekli-sandalye.png" alt=""></a></div>
+                                    <div class="sigma_product-body">
+                                        <h5 class="sigma_product-title">Tekerleli Sandalye</h5>
+                                        <div class="sigma_rating">
+
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="sigma_product-price"><span>$30,6</span><span>$34</span></div>
+                                        <button class="button-icon"><a href="#"> <i
+                                                    class="fa-solid fa-cart-arrow-down fa-lg" style="color: #fff;"
+                                                    id="icons"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="sigma_product style-8">
+
+                                    <div class="heart-right">
+                                        <Button id="btn3" class="btn" onclick="Toggle1(id)">
+                                            <i class="fa-brands fa-gratipay"></i>
+                                        </Button>
+                                    </div>
+
+                                    <div class="sigma_product-thumb"><a href="#"><img
+                                                src="resimler/img/tekerlekli-sandalye.png" alt=""></a></div>
+                                    <div class="sigma_product-body">
+                                        <h5 class="sigma_product-title">Tekerleli Sandalye</h5>
+                                        <div class="sigma_rating">
+
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="sigma_product-price"><span>$30,6</span><span>$34</span></div>
+                                        <button class="button-icon"><a href="#"> <i
+                                                    class="fa-solid fa-cart-arrow-down fa-lg" style="color: #fff;"
+                                                    id="icons"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="sigma_product style-8">
+
+                                    <div class="heart-right">
+                                        <Button id="btn4" class="btn" onclick="Toggle1(id)">
+                                            <i class="fa-brands fa-gratipay"></i>
+                                        </Button>
+                                    </div>
+
+                                    <div class="sigma_product-thumb"><a href="#"><img
+                                                src="resimler/img/tekerlekli-sandalye.png" alt=""></a></div>
+                                    <div class="sigma_product-body">
+                                        <h5 class="sigma_product-title">Tekerleli Sandalye</h5>
+                                        <div class="sigma_rating">
+
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="sigma_product-price"><span>$30,6</span><span>$34</span></div>
+                                        <button class="button-icon"><a href="#"> <i
+                                                    class="fa-solid fa-cart-arrow-down fa-lg" style="color: #fff;"
+                                                    id="icons"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="sigma_product style-8">
+
+                                    <div class="heart-right">
+                                        <Button id="btn5" class="btn" onclick="Toggle1(id)">
+                                            <i class="fa-brands fa-gratipay"></i>
+                                        </Button>
+                                    </div>
+
+                                    <div class="sigma_product-thumb"><a href="#"><img
+                                                src="resimler/img/tekerlekli-sandalye.png" alt=""></a></div>
+                                    <div class="sigma_product-body">
+                                        <h5 class="sigma_product-title">Tekerleli Sandalye</h5>
+                                        <div class="sigma_rating">
+
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="sigma_product-price"><span>$30,6</span><span>$34</span></div>
+                                        <button class="button-icon"><a href="#"> <i
+                                                    class="fa-solid fa-cart-arrow-down fa-lg" style="color: #fff;"
+                                                    id="icons"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="sigma_product style-8">
+
+                                    <div class="heart-right">
+                                        <Button id="btn6" class="btn" onclick="Toggle1(id)">
+                                            <i class="fa-brands fa-gratipay"></i>
+                                        </Button>
+                                    </div>
+
+                                    <div class="sigma_product-thumb"><a href="#"><img
+                                                src="resimler/img/tekerlekli-sandalye.png" alt=""></a></div>
+                                    <div class="sigma_product-body">
+                                        <h5 class="sigma_product-title">Tekerleli Sandalye</h5>
+                                        <div class="sigma_rating">
+
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="sigma_product-price"><span>$30,6</span><span>$34</span></div>
+                                        <button class="button-icon"><a href="#"> <i
+                                                    class="fa-solid fa-cart-arrow-down fa-lg" style="color: #fff;"
+                                                    id="icons"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="sigma_product style-8">
+
+                                    <div class="heart-right">
+                                        <Button id="btn7" class="btn" onclick="Toggle1(id)">
+                                            <i class="fa-brands fa-gratipay"></i>
+                                        </Button>
+                                    </div>
+
+                                    <div class="sigma_product-thumb"><a href="#"><img
+                                                src="resimler/img/tekerlekli-sandalye.png" alt=""></a></div>
+                                    <div class="sigma_product-body">
+                                        <h5 class="sigma_product-title">Tekerleli Sandalye</h5>
+                                        <div class="sigma_rating">
+
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="sigma_product-price"><span>$30,6</span><span>$34</span></div>
+                                        <button class="button-icon"><a href="#"> <i
+                                                    class="fa-solid fa-cart-arrow-down fa-lg" style="color: #fff;"
+                                                    id="icons"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="sigma_product style-8">
+
+                                    <div class="heart-right">
+                                        <Button id="btn8" class="btn" onclick="Toggle1(id)">
+                                            <i class="fa-brands fa-gratipay"></i>
+                                        </Button>
+                                    </div>
+
+                                    <div class="sigma_product-thumb"><a href="#"><img
+                                                src="resimler/img/tekerlekli-sandalye.png" alt=""></a></div>
+                                    <div class="sigma_product-body">
+                                        <h5 class="sigma_product-title">Tekerleli Sandalye</h5>
+                                        <div class="sigma_rating">
+
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="sigma_product-price"><span>$30,6</span><span>$34</span></div>
+                                        <button class="button-icon"><a href="#"><i class="fa-solid fa-cart-arrow-down fa-lg" style="color: #fff;"id="icons"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        <div class="button-container">
+                            <button onclick="window.location.href='urunler.html'"
+                                style="border-radius: 6px;width: 100%; ">Daha
+                                Fazlası</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doctor">
+                <div class="section section-padding bg-gray">
+                    <div class="container">
+                        <div class="section-title centered"><h3 class="title mb-0">Ekibimiz</h3></div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="sigma_team style-15">
+                                    <div class="sigma_team-thumb"><img src="resimler/348x350-0.jpg"></div>
+                                    <div class="sigma_team-body">
+                                        <h5>Matthew Reyes</h5>
+                                        <div class="sigma_team-categories">Obstetrics &amp; Gynaecology</div>
+                                        <ul>
+                                            <li> Cilt Kızarıklıkları</li>
+                                            <li>Siyah Nokta Tedavisi</li>
+                                            <li>Saç Dökülmeleri</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="sigma_team style-15">
+                                    <div class="sigma_team-thumb"><img src="resimler/348x350-0.jpg"></div>
+                                    <div class="sigma_team-body">
+                                        <h5>Matthew Reyes</h5>
+                                        <div class="sigma_team-categories">Obstetrics &amp; Gynaecology</div>
+                                        <ul>
+                                            <li> Cilt Kızarıklıkları</li>
+                                            <li>Siyah Nokta Tedavisi</li>
+                                            <li>Saç Dökülmeleri</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="sigma_team style-15">
+                                    <div class="sigma_team-thumb"><img src="resimler/348x350-0.jpg"></div>
+                                    <div class="sigma_team-body">
+                                        <h5>Matthew Reyes</h5>
+                                        <div class="sigma_team-categories">Obstetrics &amp; Gynaecology</div>
+                                        <ul>
+                                            <li> Cilt Kızarıklıkları</li>
+                                            <li>Siyah Nokta Tedavisi</li>
+                                            <li>Saç Dökülmeleri</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="sigma_team style-15">
+                                    <div class="sigma_team-thumb"><img src="resimler/348x350-0.jpg"></div>
+                                    <div class="sigma_team-body">
+                                        <h5>Matthew Reyes</h5>
+                                        <div class="sigma_team-categories">Obstetrics &amp; Gynaecology</div>
+                                        <ul>
+                                            <li> Cilt Kızarıklıkları</li>
+                                            <li>Siyah Nokta Tedavisi</li>
+                                            <li>Saç Dökülmeleri</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="button-container">
+                    <button onclick="window.location.href='randevu.html'" style="border-radius: 6px;width: 100%; ">Daha Fazlası</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+
+        function Toggle1(elementId) {
+            var btnvar1 = document.getElementById(elementId);
+            if (btnvar1.style.color == "red") {
+                btnvar1.style.color = "grey";
+                print(burda)
+            } else {
+                btnvar1.style.color = "red";
+            }
+        }
+    </script>
+
+</body>

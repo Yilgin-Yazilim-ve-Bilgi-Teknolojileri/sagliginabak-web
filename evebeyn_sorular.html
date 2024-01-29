@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu Onay </title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     
+
+      <style>
+        
+        .centered-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+   
+}
+
+.boxs {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f0f0f016;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(145, 140, 140, 0.2);
+    width: 500px;
+    
+    
+
+}
+
+
+.boxd{
+    
+  
+   
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
+    background-color: #f1f1f11f;
+}
+
+.discount {
+  
+  margin-top: -11px;
+  margin-left: -11px;
+  width: 200px;
+  background-color: #D9D9D9;
+  color: white;
+  padding: 8px;
+    padding: 10px 40px; 
+    width: 250px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(0, 0, 0);
+    
+    float: left;
+  
+}
+
+.discount-text {
+  font-weight: bold;
+}
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+  
+
+  
+        .centered-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+   
+   
+   
+   
+}
+.yorumlar {
+  
+    width: 600px;
+    gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+ 
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
+    background-color: #f1f1f11f;
+
+   
+   
+}
+
+.button-container {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.onayla-button {
+    background-color: #A2CAE6;
+    color: #fff;
+    font-weight: bold;
+    font-size: x-large;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 600px;
+    height: 55px;
+}
+
+.onayla-button:hover {
+    background-color: #0057b3bf;
+}
+
+.boxd{
+    display: flex;
+    flex-direction: column;
+ 
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+   
+    background-color: #ffffff1f;
+}
+
+.discount {
+  
+  margin-bottom: -11px;
+  margin-left: -11px;
+ 
+  background-color: #D9D9D9;
+  
+  padding: 8px;
+     
+    width: 150px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(0, 0, 0);
+    
+    float: left;
+  
+}
+
+
+.discount-text {
+  font-weight: bold;
+}
+
+
+
+.card-image {
+ 
+ 
+  margin-top: 20px;
+margin-left: 50px;
+  width: 140px; /* İstediğiniz boyuta göre değiştirin */
+  height: auto; /* İstediğiniz boyuta göre değiştirin */
+}
+p{
+    margin: 40px;
+}
+
+.card-image img {
+margin-right: -200px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 50px;
+ 
+}
+
+
+h1{
+    text-align: center;
+}
+.container{
+    margin-top:100px;
+}
+
+.btn:hover{
+    color:#fff;
+}
+
+.input-text:focus{
+       
+  
+    box-shadow: 0px 0px 0px;
+    border-color:#4DE5B9;
+    outline: 0px;
+    border-radius: 15px;
+
+}
+
+.form-control {
+    border: 1px solid #4DE5B9;
+}
+.btn-outline{
+    background-color: #4DE5B9;
+    border-radius: 38px;
+    width: 80px;
+}
+.form-control {
+    border-radius: 38px;
+    
+}
+
+
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            margin-top: 30px;
+           
+           
+        }
+       
+        .card-image2 {
+ 
+ left: 20px;
+ top: 60px;
+ width: 25px; /* İstediğiniz boyuta göre değiştirin */
+ height: auto; /* İstediğiniz boyuta göre değiştirin */
+}
+
+.card-image2 img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: 5px;
+}
+.aciklama{
+   width:460px;
+   height: 120px;
+}
+.yorumla-button {
+    background-color: #A2CAE6;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+   
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+.yorumla-button:hover {
+    background-color: #0057b3bf;
+}
+
+.hidden-box {
+            display: none;
+        }
+
+        .button-divam {
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            background-color: #C7E166;
+            width: 200px;
+            height: 50px;
+            border-radius: 20px;
+           margin-left: 200px;
+           margin-bottom: -20px;
+           color: #ffffff;
+           font-size: large;
+           padding-top: 10px;
+          
+        }
+        
+       
+        
+   
+
+        .image-container img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        .sola-kaydir{
+      float:left;
+      padding:0 10px 10px 0;
+      }
+      
+    </style>
+    
+</head>
+<body>
+
+<div class="boxd" >
+    <h1>SORULAR</h1>
+    <div class="container justify-content-center">
+    
+        <div class="row">
+    
+           <div class="col-md-12">
+               
+               <div class="input-group mb-3">
+      <input type="text" class="form-control input-text" placeholder="Bul...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline btn-lg" type="button"><i class="fa fa-search"></i></button>
+      </div>
+      </div>
+               
+           </div>        
+            
+        </div>
+        
+        
+    </div>
+    <div class="button-container">
+        <button class="onayla-button">Evebeynlere Soru Sor</button>
+    </div>
+
+
+
+   <div class="yorumlar">
+    <!--
+        img
+    -->
+    <div class="user-info">
+        <div  class="card-image ">
+            <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"   alt="User Image">
+        </div>
+        <b>Fatma Kara</b>
+        <span>2-5 Yaş</span>
+    </div>
+    
+    <p>Bebeğim geceleri çok huzursuz ne yapacağımı şaşırdım. 
+        Lütfen bana yardım edin bezden sıkıntısı var sanırım 
+        ne yapacağımı şaşırdım. Sizden dönüş bekliyorum,
+        XXX markalı bebek bezini kullanıyorum.</p>
+  
+
+    <div class="centered-box">
+    
+        <div class="boxs">
+            <div class="discount">
+                <span class="discount-text">Mehmet Y.</span>
+            </div>
+            <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+            <div class="image-container">
+                <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+               
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+            </div>
+        
+        </div>
+        </div>
+        <div class="centered-box">
+    
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text">Mehmet Y.</span>
+                </div>
+                <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                <div class="image-container">
+                    <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                   
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                </div>
+            
+            </div>
+            </div>
+            <div class="centered-box">
+    
+                <div class="boxs">
+                    <div class="discount">
+                        <span class="discount-text">Mehmet Y.</span>
+                    </div>
+                    <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                    <div class="image-container">
+                        <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                       
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                    </div>
+                
+                </div>
+                </div>
+                <div class="centered-box" >
+                    <div class="boxs">
+                      
+                        <div align="left" class="card-image2"  >
+                            <img src="resimler/Group 1057.png"  alt="Image 1">
+                        </div>
+                        <div class="aciklama">
+        
+                        </div>
+                      
+                        <div class="button-container">
+                            <button class="yorumla-button">Yorum Yap</button>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+<br>
+<br>
+<br>
+
+</div>
+<div class="yorumlar">
+    <!--
+        img
+    -->
+    <div class="user-info">
+        <div  class="card-image ">
+            <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"   alt="User Image">
+        </div>
+        <b>Fatma Kara</b>
+        <span>2-5 Yaş</span>
+    </div>
+    
+    <p>Bebeğim geceleri çok huzursuz ne yapacağımı şaşırdım. 
+        Lütfen bana yardım edin bezden sıkıntısı var sanırım 
+        ne yapacağımı şaşırdım. Sizden dönüş bekliyorum,
+        XXX markalı bebek bezini kullanıyorum.</p>
+  
+
+    <div class="centered-box">
+    
+        <div class="boxs">
+            <div class="discount">
+                <span class="discount-text">Mehmet Y.</span>
+            </div>
+            <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+            <div class="image-container">
+                <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+               
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+            </div>
+        
+        </div>
+        </div>
+        <div class="centered-box">
+    
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text">Mehmet Y.</span>
+                </div>
+                <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                <div class="image-container">
+                    <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                   
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                </div>
+            
+            </div>
+            </div>
+            <div class="centered-box">
+    
+                <div class="boxs">
+                    <div class="discount">
+                        <span class="discount-text">Mehmet Y.</span>
+                    </div>
+                    <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                    <div class="image-container">
+                        <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                       
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                    </div>
+                
+                </div>
+                </div>
+                <div class="centered-box" >
+                    <div class="boxs">
+                      
+                        <div align="left" class="card-image2"  >
+                            <img src="resimler/Group 1057.png"  alt="Image 1">
+                        </div>
+                        <div class="aciklama">
+        
+                        </div>
+                      
+                        <div class="button-container">
+                            <button class="yorumla-button">Yorum Yap</button>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+<br>
+<br>
+<br>
+
+</div>
+
+
+
+
+<div class="yorumlar">
+
+    <div class="user-info">
+        <div class="card-image">
+            <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png" alt="User Image">
+        </div>
+        <b>Fatma Kara</b>
+        <br>
+        <span>2-5 Yaş</span>
+    </div>
+    <p>Bebeğim geceleri çok huzursuz ne yapacağımı şaşırdım. Lütfen bana yardım edin bezden sıkıntısı var sanırım
+        ne yapacağımı şaşırdım. Sizden dönüş bekliyorum, XXX markalı bebek bezini kullanıyorum.</p>
+        <div class="centered-box" id="div1">
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text">Mehmet Y.</span>
+                </div>
+                <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                <div class="image-container">
+                    <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                   
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                </div>
+            
+            </div>
+        </div>
+        <div class="centered-box" id="div1">
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text">Mehmet Y.</span>
+                </div>
+                <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                <div class="image-container">
+                    <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                   
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                </div>
+            
+            </div>
+        </div>
+        <div class="centered-box hidden-box" id="div1">
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text">Mehmet Y.</span>
+                </div>
+                <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                <div class="image-container">
+                    <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                   
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                </div>
+            
+            </div>
+        </div>
+        
+    <div class="centered-box hidden-box" id="div5">
+        <div class="boxs">
+            <div align="left" class="card-image2">
+                <img src="resimler/Group 1057.png" alt="Image 1">
+            </div>
+            <div class="aciklama"></div>
+            <div class="button-container">
+                <button class="yorumla-button">Yorum Yap</button>
+            </div>
+        </div>
+    </div>
+    <div class="button-divam" onclick="toggleHidden()">Devamını Oku</div>
+    
+   
+</div>
+<br>
+
+<div class="yorumlar">
+
+    <div class="user-info">
+        <div class="card-image">
+            <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png" alt="User Image">
+        </div>
+        <b>Fatma Kara</b>
+        <br>
+        <span>2-5 Yaş</span>
+    </div>
+    <p>Bebeğim geceleri çok huzursuz ne yapacağımı şaşırdım. Lütfen bana yardım edin bezden sıkıntısı var sanırım
+        ne yapacağımı şaşırdım. Sizden dönüş bekliyorum, XXX markalı bebek bezini kullanıyorum.</p>
+        <div class="centered-box" id="div1">
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text">Mehmet Y.</span>
+                </div>
+                <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                <div class="image-container">
+                    <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                   
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                </div>
+            
+            </div>
+        </div>
+        <div class="centered-box" id="div1">
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text">Mehmet Y.</span>
+                </div>
+                <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                <div class="image-container">
+                    <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                   
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                </div>
+            
+            </div>
+        </div>
+        <div class="centered-box hidden-box" id="div1">
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text">Mehmet Y.</span>
+                </div>
+                <span style="align-self: flex-end; margin-top: -40px ; color: rgb(71, 69, 69);">21.07.2023</span>
+                <div class="image-container">
+                    <img src="resimler/IMG_1011-photoaidcom-cropped.jpeg.png"  class="sola-kaydir"alt="Mehmet's Image">
+                   
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolores impedit velit ex placeat quisquam!</span>
+                </div>
+            
+            </div>
+        </div>
+        
+    <div class="centered-box hidden-box" id="div5">
+        <div class="boxs">
+            <div align="left" class="card-image2">
+                <img src="resimler/Group 1057.png" alt="Image 1">
+            </div>
+            <div class="aciklama"></div>
+            <div class="button-container">
+                <button class="yorumla-button">Yorum Yap</button>
+            </div>
+        </div>
+    </div>
+    <div class="button-divam" onclick="toggleHidden()">Devamını Oku</div>
+    
+   
+</div>
+</div>
+
+<script>
+ function toggleHidden() {
+        var hiddenDivs = document.querySelectorAll('.hidden-box');
+        hiddenDivs.forEach(function (div) {
+            div.classList.toggle('hidden-box');
+        });
+
+        var devamiButton = document.querySelector('.button-divam');
+        devamiButton.style.display = 'none';
+    }
+</script>
+
+
+
+
+
+
+</div>      
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

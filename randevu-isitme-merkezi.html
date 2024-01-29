@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa 1</title>
+    <!-- Eski stil bağlantıları -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+  
+  
+
+        .container {
+            margin-top: 20px;
+        }
+
+        /* Uyumlu divler için stil tanımlamaları */
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            
+        }
+
+        .flex-item {
+            flex: 1 1 calc(33.33% - 20px);
+            max-width: calc(33.33% - 20px);
+            padding: 20px;
+            background-color: #f0f0f00b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s; /* Geçiş efekti için */
+            border: 2px solid #77EBCA;
+           height: 120px;
+           transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+        }
+        .flex-item:hover {
+          
+            background-color: #77EBCA; /* Kutunun üzerine gelince arkaplan rengi */
+            color: #ffffff !important; /* Kutunun üzerine gelince yazı rengi (Beyaz) */
+            border-color:#77EBCA; /* Kutunun üzerine gelince çerçeve rengi */
+        }
+        .flex-item p {
+            color:#77EBCA;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: x-large;
+        }
+        .flex-item:hover p{
+            color: #ffffff;
+        }
+      
+       
+
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2 style="text-align: center; font-weight: bold; margin-top: 200px;">Randavu</h2>
+    <!-- Sayfa 1 içeriği -->
+    <div class="container">
+        <div class="flex-container">
+            <!-- Div 1 -->
+            <a href="randevu1.html" class="flex-item">
+                <p>ÜCRETSİZ İŞİTME TESTİ</p>
+
+            </a>
+
+            <!-- Div 2 -->
+            <a href="randevu2.html" class="flex-item">
+                <p>CİHAZ TESTİ</p>
+                
+            </a>
+
+            <!-- Div 3 -->
+            <a href="randevu3.html" class="flex-item">
+                <p>CİHAZ TESTİ</p>
+               
+            </a>
+
+            <!-- Div 4 -->
+            <a href="randevu4.html" class="flex-item">
+                <p>CİHAZ TESTİ</p>
+               
+            </a>
+
+            <!-- Div 5 -->
+            <a href="randevu5.html" class="flex-item">
+                <p>CİHAZ TESTİ</p>
+               
+            </a>
+        </div>
+    </div>
+</body>
+</html>

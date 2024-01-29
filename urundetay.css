@@ -1,0 +1,33 @@
+.ürün-detay {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .ürün-adı {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ürün-açıklama {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .ürün-fiyat {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sepete-ekle-buton {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

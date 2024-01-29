@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>EVEBEYN KULUBÜ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .harcamalar-container {
+            width: 500px;
+            margin: auto;
+            border: 2px solid #cccccc27;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #ffffff;
+        }
+
+        .harcamalar-container h2 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .centered-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+
+        .boxs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #f0f0f016;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(145, 140, 140, 0.2);
+            width: 460px;
+            position: relative;
+            
+        }
+        .discount {
+  
+  margin-top: -11px;
+  margin-left: -11px;
+  background-color:#C7E166;
+  color: white;
+  padding: 8px;
+  
+    width: 320px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(255, 255, 255);
+    
+    float: left;
+  
+}
+
+.discount-text {
+
+  font-size: x-large;
+ 
+}
+
+        h2 {
+            text-align: center;
+        }
+
+      
+        .btn {
+            width: 100%;
+            text-align: left;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            position: relative;
+        }
+
+        .btn::after {
+            content: '';
+            display: inline-block;
+            border: solid rgb(0, 0, 0);
+            border-width: 0 2px 2px 0;
+            padding: 3px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50%;
+            right: 20px; /* İstediğiniz kadar öteleyebilirsiniz */
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .dropdown-menu {
+            width: 100%;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-top: -11px;
+            
+        }
+
+        /* İsteğe bağlı olarak dropdown menüdeki öğelerin genişliğini düzenleyebilirsiniz */
+        .dropdown-item {
+            width: 100%;
+        }
+        .dropdown-show{
+            width: 460px;
+            margin-left: -11px;
+            margin-top: -11px;
+           
+        }
+        .dropdown-toggle{
+            background-color: #A2CAE6;
+            border: #A2CAE6;
+        }
+      
+      b{
+        font-size: large;
+        margin: 30px;
+        
+       
+      }
+      .card-image {
+ 
+  left: 20px;
+  top: 60px;
+  width: 25px; /* İstediğiniz boyuta göre değiştirin */
+  height: auto; /* İstediğiniz boyuta göre değiştirin */
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.aciklama{
+    width:460px;
+    height: 80px;
+}
+.button-container {
+            margin-top: 20px;
+            text-align: center;
+            justify-content: center;
+           
+           
+        }
+        .anket-button{
+            width: 300px;
+            height: 50px;
+            background-color:#A2CAE6 ;
+            border: #A2CAE6;
+            border-radius: 20px;
+            color: #ffffff;
+            font-size: large;
+            font-weight: 800;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="harcamalar-container">
+        <h2>SORU SOR</h2>
+
+        <div class="centered-box">
+            <div class="boxs">
+                <div class="dropdown-show">
+                    <a class="btn btn-secondary btn-lg  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <b>Yaş Grubu Seç</b>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">0-2 Yaş grubu</a>
+                        <a class="dropdown-item" href="#">2-5 Yaş grubu</a>
+                        <a class="dropdown-item" href="#">5-6 Yaş grubu</a>
+                    </div>
+                </div>
+                
+                <span><b>0-2 Yaş Grubu</b></span>
+             
+            </div>
+        </div>
+        <div class="centered-box" >
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text"><b>Konu Başlığını Giriniz</b></span>
+                
+                </div>
+                <div align="left" class="card-image"  >
+                    <img src="resimler/Group 1057.png"  alt="Image 1">
+                </div>
+              
+                 
+                
+                
+            </div>
+        </div>
+        <div class="centered-box" >
+            <div class="boxs">
+                <div class="discount">
+                    <span class="discount-text"><b>Açıklama Giriniz</b></span>
+                
+                </div>
+                <div align="left" class="card-image"  >
+                    <img src="resimler/Group 1057.png"  alt="Image 1">
+                </div>
+                <div class="aciklama">
+
+                </div>
+              
+                 
+                
+                
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="anket-button" onclick="window.location.href='#'">GÖNDER</button>
+        </div>
+
+    </div>
+
+    <!-- JQuery ve Bootstrap JS dosyalarını ekleyin -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
